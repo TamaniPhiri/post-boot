@@ -50,4 +50,9 @@ public class Tutorial {
     public void setPublished(boolean published){
         this.published=published;
     }
+
+    @Override
+    public String toString(){
+        return "Tutorial [id="+id+"title="+title+"description="+description;
+    }
 }
