@@ -45,5 +45,8 @@ public class TutorialController  {
         }
     }
 
-    @PostMapping()
+    @PostMapping("/tutorials")
+    public ResponseEntity<Tutorial> createTutorial(@RequestBody Tutorial tutorial){
+
+    }
 }
