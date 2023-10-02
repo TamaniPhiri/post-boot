@@ -13,4 +13,7 @@ public class Tutorial {
 
     @Column(name = "description")
     private String description;
+
+    @Column(name = "published")
+    private boolean published;
 }
