@@ -63,6 +63,10 @@ public class TutorialController  {
             Tutorial _tutorial=tutorialData.get();
             _tutorial.setTitle(_tutorial.getTitle());
             _tutorial.setDescription(_tutorial.getDescription());
+            _tutorial.setPublished(_tutorial.isPublished());
+            return new ResponseEntity<>(tutorialRepository.save(_tutorial),HttpStatus.OK);
+        }else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
 }
