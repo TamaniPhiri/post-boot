@@ -35,7 +35,7 @@ public class TutorialController  {
         }
     }
 
-    @GetMapping("/tutorial/{id}")
+    @GetMapping("/tutorials/{id}")
     public ResponseEntity<Tutorial> getTutorialById(@PathVariable("id") long id){
         Optional<Tutorial> tutorialData= tutorialRepository.findById(id);
         if (tutorialData.isPresent()) {
