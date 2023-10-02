@@ -22,4 +22,12 @@ public class Tutorial {
         this.description=description;
         this.published=published;
     }
+
+    public long getId() {
+        return id;
+    }
+
+    public String getTitle(){
+        return title;
+    }
 }
