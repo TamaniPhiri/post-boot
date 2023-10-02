@@ -79,4 +79,11 @@ public class TutorialController  {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+    @GetMapping("/tutorials/published")
+    public ResponseEntity<List<Tutorial>> findByPublished(){
+        try {
+
+        }
+    }
 }
