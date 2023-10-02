@@ -10,4 +10,7 @@ public class Tutorial {
 
     @Column(name = "title")
     private String title;
+
+    @Column(name = "description")
+    private String description;
 }
