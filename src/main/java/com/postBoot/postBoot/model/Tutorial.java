@@ -46,4 +46,8 @@ public class Tutorial {
     public boolean isPublished(){
         return published;
     }
+
+    public void setPublished(boolean published){
+        this.published=published;
+    }
 }
