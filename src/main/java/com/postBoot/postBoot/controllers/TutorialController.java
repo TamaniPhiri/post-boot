@@ -47,6 +47,9 @@ public class TutorialController  {
 
     @PostMapping("/tutorials")
     public ResponseEntity<Tutorial> createTutorial(@RequestBody Tutorial tutorial){
-
+        try {
+            Tutorial _tutorial=tutorialRepository.save(new Tutorial(tutorial.getTitle(),tutorial.getDescription(),false));
+            return new ResponseEntity<>(_tutorial,HttpStatus.CREATED);
+        }
     }
 }
