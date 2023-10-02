@@ -61,6 +61,8 @@ public class TutorialController  {
         Optional<Tutorial> tutorialData=tutorialRepository.findById(id);
         if(tutorialData.isPresent()){
             Tutorial _tutorial=tutorialData.get();
+            _tutorial.setTitle(_tutorial.getTitle());
+            _tutorial.setDescription(_tutorial.getDescription());
         }
     }
 }
