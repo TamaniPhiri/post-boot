@@ -42,4 +42,8 @@ public class Tutorial {
     public void setDescription(String description){
         this.description=description;
     }
+
+    public boolean isPublished(){
+        return published;
+    }
 }
