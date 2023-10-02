@@ -70,7 +70,7 @@ public class TutorialController  {
         }
     }
 
-    @DeleteMapping("/tutorial/{id}")
+    @DeleteMapping("/tutorials/{id}")
     public ResponseEntity<Tutorial> deleteTutorialById(@PathVariable("id") long id){
         try {
             tutorialRepository.deleteById(id);
